@@ -7,7 +7,9 @@ Pathに注意してください
 
 ２．replace.py
 
-３．jmn.py
+３．jmn.py 
+    
+    ignoring...みたいのは気にしないで大丈夫なはず
 
 ４．make_dataset.py
 
