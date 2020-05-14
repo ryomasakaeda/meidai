@@ -7,6 +7,9 @@ with open("/mnt/c/Users/ryomasakaeda/dialogue_research/dataset/meidai/src/src.tx
         with open("/mnt/c/Users/ryomasakaeda/dialogue_research/dataset/meidai/src/src_val.txt",mode="w") as sv:
             i=0
             for line in s:
+                if len(line)==1:
+                    print("aaa")
+                    line="＜空行＞\n"
                 if i in rand_list:
                    sv.write(line)
                 else:
@@ -19,6 +22,9 @@ with open("/mnt/c/Users/ryomasakaeda/dialogue_research/dataset/meidai/tgt/tgt.tx
         with open("/mnt/c/Users/ryomasakaeda/dialogue_research/dataset/meidai/tgt/tgt_val.txt",mode="w") as tv:
             i=0
             for line in t:
+                if len(line)==1:
+                    print("aaa")
+                    line="＜空行＞\n"
                 if i in rand_list:
                    tv.write(line)
                 else:
